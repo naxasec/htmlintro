@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+    </head>
+    <body>
+        <h1>Kindly Fill the form below so we can contact you</h1><br>
+        <form id="naxaForm" action="https://formsubmit.co/7f2a65e8ae6d207c03594d238c8ebee7" method="post" enctype="multipart/form-data" target="_blank">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="thankyou.html">
+            
+            <label for="myname">Name</label>
+            <input id="myname" type="text" name="myname" placeholder="Firstname Lastname" required><br><br>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="example@domain.com" required><br><br>
+            <label for="gender">Gender</label><br>
+            <input id="male" name="gender" type="radio" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+            <label for="age">Select age range</label>
+            <select id="age" name="age" required><br><br>
+              <option value="" disabled selected>Select age range</option>
+              <option value="18-24">18-24</option>
+              <option value="25-30">25-30</option>
+              <option value="31-35">31-35</option>
+              <option value="36-40">36-40</option>
+            </select><br><br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+23412345678" required><br><br>
+            <label for="goat">Select your three Greatest Footballers of All Time</label><br>
+            <input type="checkbox" id="messi" name="goat" value="Messi">
+            <label for="messi">Messi</label>
+            <input type="checkbox" id="cristiano" name="goat" value="C.Ronaldo">
+            <label for="cristiano">C.Ronaldo</label>
+            <input type="checkbox" id="maradona" name="goat" value="Maradona">
+            <label for="maradona">Maradona</label>
+            <input type="checkbox" id="pele" name="goat" value="Pele">
+            <label for="pele">Pele</label>
+            <input type="checkbox" id="ronaldo" name="goat" value="Ronaldo">
+            <label for="ronaldo">Ronaldo</label>
+            <input type="checkbox" id="dinho" name="goat" value="Ronaldinho">
+            <label for="dinho">Ronaldinho</label><br><br>
+            <label for="linkedin">LinkedIn profile link</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourname" required><br><br>
+            <label for="cv">Upload your CV (only in pdf format)</label>
+            <input type="file" id="cv" name="cv" accept="pdf"><br><br>
+            <label for="msg">Write any other additional message below</label><br>
+            <input type="text-area" id="msg" name="message" size="100"><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
